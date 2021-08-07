@@ -1,0 +1,30 @@
+[
+   {
+      "name": "Euro Championship",
+      "esSeasonId":797,
+      "esLeagueId":43,
+      "afLeagueId":4,
+      "season":2020
+   },
+   {
+      "name": "UEFA Champions League",
+      "esSeasonId":4200,
+      "esLeagueId":7,
+      "season":2021,
+      "afLeagueId":2
+   },
+   {
+      "name": "English Premier League",
+      "esSeasonId":4210,
+      "esLeagueId":234,
+      "season":2021,
+      "afLeagueId":39
+   },
+   {
+      "name": "English FA Cup",
+      "esSeasonId":4268,
+      "esLeagueId":240,
+      "season":2021,
+      "afLeagueId":45
+   }
+]
