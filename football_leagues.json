@@ -5,7 +5,8 @@
       "esLeagueId":43,
       "afLeagueId":4,
       "season":2020,
-      "isTransfer": false
+      "isTransfer": false,
+      "isActive": true
    },
    {
       "name": "UEFA Champions League",
@@ -13,7 +14,8 @@
       "esLeagueId":7,
       "season":2021,
       "afLeagueId":2,
-      "isTransfer": false
+      "isTransfer": false,
+      "isActive": true
    },
    {
       "name": "English Premier League",
@@ -21,7 +23,8 @@
       "esLeagueId":234,
       "season":2021,
       "afLeagueId":39,
-      "isTransfer": true
+      "isTransfer": true,
+      "isActive": true
    },
    {
       "name": "English FA Cup",
@@ -29,6 +32,7 @@
       "esLeagueId":240,
       "season":2021,
       "afLeagueId":45,
-      "isTransfer": false
+      "isTransfer": false,
+      "isActive": false
    }
 ]
