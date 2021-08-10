@@ -14,7 +14,7 @@
       "esLeagueId":7,
       "season":2021,
       "afLeagueId":2,
-      "isTransfer": false,
+      "isTransfer": true,
       "isActive": true
    },
    {
