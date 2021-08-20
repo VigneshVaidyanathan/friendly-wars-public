@@ -6,7 +6,7 @@
       "afLeagueId":4,
       "season":2020,
       "isTransfer": false,
-      "isActive": true
+      "isActive": false
    },
    {
       "name": "UEFA Champions League",
@@ -15,7 +15,7 @@
       "season":2021,
       "afLeagueId":2,
       "isTransfer": true,
-      "isActive": true
+      "isActive": false
    },
    {
       "name": "English Premier League",
