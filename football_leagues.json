@@ -34,5 +34,14 @@
       "afLeagueId":45,
       "isTransfer": false,
       "isActive": false
+   },
+   {
+      "name": "Major League Soccer",
+      "esSeasonId":0,
+      "esLeagueId":0,
+      "season":2021,
+      "afLeagueId":253,
+      "isTransfer": false,
+      "isActive": true
    }
 ]
