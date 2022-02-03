@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+      <div class="flex flex-col h-[290mm] w-[210mm] p-3">
+          <div class="header flex flex-row justify-center">
+            <div class="w-40 h-20">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/tca-dental.appspot.com/o/TCA-Logo.png?alt=media&token=59102e91-ff64-43ed-a6d9-2b1dc5de69f4" />
+            </div>
+            <div class="flex-col flex-1 text-sm ml-2 font-semibold">
+              <div>14727 Lull St, Ste A</div>
+              <div>Van Nuys, CA 91405</div>
+              <div>Toll Free: 844-336-8754</div>
+              <div>www.tcadental.com</div>
+            </div>
+            <div class="w-60 flex flex-col items-center justify-center">
+              <div class="text-2xl font-bold">Sales Order</div>
+              <div class="flex flex-col p-3 text-sm">
+                <div class="flex items-center justify-center text-center font-semibold">
+                  <div class="w-24 h-8 border border-gray-900 flex items-center justify-center">Date</div>
+                  <div class="w-24 h-8 border border-gray-900 flex items-center justify-center">S.O. No.</div>
+                </div>
+                <div class="flex items-center justify-center text-center">
+                  <div class="w-24 h-8 border border-gray-900 flex items-center justify-center">{{date}}</div>
+                  <div class="w-24 h-8 border border-gray-900 flex items-center justify-center">{{invoiceNumber}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="border-t border-gray-300 mt-4 p-5 px-10 flex">
+            <div class="flex flex-col flex-1 mx-2">
+              <div class="px-3 py-1 border border-gray-600 text-sm font-semibold">Name/ Address</div>
+              <div class="px-3 py-1 h-40 border border-gray-600">{{name}}</div>
+            </div>
+            <div class="flex flex-col flex-1 mx-2">
+              <div class="px-3 py-1 border border-gray-600 text-sm font-semibold">Ship To</div>
+              <div class="px-3 py-1 h-40 border border-gray-600">{{name}}</div>
+            </div>
+          </div>
+        
+          <div class="border-t border-gray-300 mt-4 p-5 px-10 flex flex-col text-center">
+            <div class="flex flex-row mx-2 font-semibold">
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">P.O. No.</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">Terms.</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">Rep</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">Ship Date</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">Ship Via</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">FOB</div>
+            </div>
+            <div class="flex flex-row mx-2">
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">{{purchaseOrderNumber}}</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">{{terms}}</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">{{rep}}</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">{{shipDate}}</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">{{shipVia}}</div>
+              <div class="px-3 py-1 flex-1 border border-gray-600 text-sm">{{fob}}</div>
+            </div>
+          </div>
+        
+          <div class="border-t border-gray-300 mt-4 p-5 px-10 flex flex-col flex-1">
+            <div class="flex flex-row mx-2 text-center font-semibold">
+              <div class="px-3 py-1 w-20 text-xs border border-gray-600 text-sm">Item</div>
+              <div class="px-3 py-1 flex-1 text-xs border border-gray-600 text-sm">Description</div>
+              <div class="px-3 py-1 w-20 text-xs border border-gray-600 text-sm">Ordered</div>
+              <div class="px-3 py-1 w-20 text-xs border border-gray-600 text-sm">Shipped</div>
+            </div>
+            <div class="flex flex-col mx-2 flex-1 uppercase">
+              {{#each items}}
+              <div class="flex flex-row">
+                <div class="px-3 pt-1 w-20 text-xs text-sm border-x border-gray-600 ">
+                  <div class="my-1">{{this.key}}</div>
+                </div>
+                <div class="px-3 pt-1 flex-1 text-xs text-sm border-x border-gray-600 ">{{this.description}}</div>
+                <div class="px-3 pt-1 w-20 text-xs text-sm border-x border-gray-600  text-center">{{this.ordered}}</div>
+                <div class="px-3 pt-1 w-20 text-xs text-sm border-x border-gray-600  text-center">{{this.shipped}}</div>
+              </div>
+              {{/each}}
+              <div class="flex flex-row flex-1">
+                <div class="px-3 py-1 flex 1 w-20 text-xs text-sm border-x border-gray-600 ">
+                </div>
+                <div class="px-3 py-1 flex-1 text-xs text-sm border-x border-gray-600 "></div>
+                <div class="px-3 py-1 w-20 text-xs text-sm border-x border-gray-600 "></div>
+                <div class="px-3 py-1 w-20 text-xs text-sm border-x border-gray-600 "></div>
+              </div>
+            </div>
+            <div class="flex flex-col mx-2 px-2 py-4 border border-gray-600 text-xs">
+              <div>1. 20% restocking fee on all return items.</div>
+              <div>2. All sales are final after 30 days. Returns will be accepted only if in original packaging and in resale
+                condition.</div>
+              <div>3. 3% finance charge per month on all past due invoices.</div>
+              <div>4. The invoice confirms receipt of products in full without signature.</div>
+            </div>
+          </div>
+  </body>
+</html>
